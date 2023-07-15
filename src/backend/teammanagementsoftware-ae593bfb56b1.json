@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "teammanagementsoftware",
+  "private_key_id": "ae593bfb56b132f6a64aa7509c28e6a3d51ee2d9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDmoswze+HcIxEw\n9zWJxASlngsmujclbIHI52WzXIv4utXl2z/Z6U2piqYsmEVAvNXZ5BKgW8k1mpB+\nWmw7eTgEnigzvSCLEZXU1HMbD7nGDhMFbOo8ozbZ02gVYMSTfHQg61oRoClNuQGw\n1rJP7zpc6QSYM8adXwzVb86ugwtdZ/5/gEXZTfVt6tzk06NjO6zv2vqS/tC4ab86\nNYfH/miii879jxD3Bsng/Smpxt2JKv6uvitI23xN/10j14LAdU5AmtrqrG2RnSeG\nXoxcNDgsQT16nnXNRUFyZJMyRuTgfG7AZUglv2IJKkpW0uUJWt7xyzKrA/YSWuWQ\nKMStE3tPAgMBAAECggEAWR/xFDYbrjN46bimHkI633tG6OTN+a7IKohNEzZAutIM\nZWJH9uACzHERTStcm6s9YpGRpxlBFG9RxhoQOB1cSeCKPZAo2sTlZxTgFEWL7x6y\nOAcCL4OM5zkcQCKgZDQUNkJskGIZg/jpz9nvlxclsRC031ImvtqjvXkS3/ow8ptI\n14PRoc0Boc2jNH7CvnvlBJLiOzxkRjAMa93V8pwoL3lcm7ohyT3tpG6dFGt8v7W5\nCX2ukHQdRG748Upfv6UCLOr2rK9665pf9jxYal3NSwavwijgAXYcj2fftiLcIWSG\n6Jq7Df7f2rqnuGTb1dwDAW9y68mqTdW933mJ7kWPxQKBgQD9IyXCDzlJhxXVo7qp\nrxvZdGfWW64Pw5cdAHJ1YJ+FrvjK2VbBVxdQbhXeV6AyukQooseuoDKQnr6KdkhE\nwqdKjcPNljIf7mCXNMQw1DCvoVrSybvJcFUYf4qQXoP82Rn0x44jwckDtZ03u3h+\nEgaoqIWWUYtZikMPWKOSZvvm/QKBgQDpPoHGOHKie4tFu58m2F8hPxLHuR2zgunE\nAPCtgei/Ln2UnBPn0WN5cfiPKbtim2ehMV8shfDW78cWwVvSBLtAAtOJ2UKN767v\nOGJtIgcvmcEqGt7cWrFgZJoayLJumrUyBjUT6qRn9rNLAttwQ339y8gjAtTN2GtB\nEL7TRFfrOwKBgB5LLYKa1c1B2FAX5wfVh+yvLJoPoLYMPzJeUlRPuueBuA52khZT\nONwMQJu6Ota3Sd7fFCyGyWZbSQxC+YUZEnIuowcgeWEu4upVi0EYs7bhBYCCWfHS\neqyS3t9GIF+LD7smgpEu6MKD4ou/6LyVpaxbdpk1qwqNLFdS0Uh9AJp1AoGBANtj\nnBWiytDifCHfVNfo9bID7dpG2RUcsl1WtQu/Afmx9RVvqZmHbpWxCic/Da62lkcc\ndXUfl2XUq+NPhNqK8MZI4kjrPprbNCR3WL1mIHQ5n2PHWpDSDb2pYvqGhK9cfcrL\n4+kT8AiKGCMaUOXL1hp/L4UfCKOGSXwuEBAQXNI5AoGAf5+mi7KF86AHEVin7eMq\nabr3OS9bdOxxDBsSmudfG8CQbVapyJBjmO3FmAlEk7/C/DBd2E8jDkjLnm4uDJ1q\n/5fQCXT29pcuSoFQzaDIR6/CVARmXCwPDrUfw1xJ1PKufysux2MdmQvRqy01Bzpg\n+g6a2q7wlY4VlTO9YPPZGg8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "teammanager-53@teammanagementsoftware.iam.gserviceaccount.com",
+  "client_id": "113009248744386357606",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/teammanager-53%40teammanagementsoftware.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
