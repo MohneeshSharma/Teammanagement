@@ -1,4 +1,4 @@
 import eel
 
-eel.init("src/frontend")
+eel.init("frontend")
 eel.start("index.html")
