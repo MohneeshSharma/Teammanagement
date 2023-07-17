@@ -1,4 +1,4 @@
 import eel
 
 eel.init("frontend")
-eel.start("index.html")
+eel.start("login.html")
