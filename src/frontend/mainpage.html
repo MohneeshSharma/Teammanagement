@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Management Admin Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgb(8, 8, 84);
+      color: #333333;
+      height:95vh;
+    }
+    
+    .container {
+      text-align:center;
+      max-width: 960px;
+      margin: 0 auto;
+      height:60vh;
+      padding: 100px;
+    }
+    
+    .admin-interface {
+
+      background: linear-gradient(-45deg, rgba(158, 106, 217, 0.903), rgb(101, 24, 70));
+      border-radius: 16px;
+      box-shadow:0 40px 30px rgba(0, 0, 0, 0.541);
+      backdrop-filter: blur(9.8px);
+      -webkit-backdrop-filter: blur(9.8px);
+      border: 1px solid rgba(46, 8, 89, 0.3);
+      /* padding: 20px;
+      margin: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 30px;
+    }
+    
+    .content-sections {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      padding:20px;
+    }
+    
+    .section {
+      width: 30%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin:20px;
+      border-radius: 16px;
+      box-shadow:0 40px 30px rgba(0, 0, 0, 0.344);
+      backdrop-filter: blur(9.8px);
+      -webkit-backdrop-filter: blur(9.8px);
+      border: 1px solid rgba(46, 8, 89, 0.3);
+    }
+    
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .section-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .section-buttons button {
+      padding: 8px 16px;
+      background-color: navy;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 16px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .section-buttons button:hover {
+      background-color: #001f4d;
+      transform: scale(1.05);
+    }
+    
+    .section-buttons button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="admin-interface">
+      <h1 class="title">Team Management Admin Page</h1>
+      
+      <div class="content-sections">
+        <div class="section">
+          <h2 class="section-title">Manage Users</h2>
+          <div class="section-buttons">
+            <button>Add User</button>
+            <button>Remove User</button>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2 class="section-title">Assign Tasks</h2>
+          <div class="section-buttons">
+            <button>Assign Task</button>
+          </div>
+        </div>
+        
+        <div class="section">
+          <h2 class="section-title">Monitor Tasks</h2>
+          <div class="section-buttons">
+            <button>View Tasks</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

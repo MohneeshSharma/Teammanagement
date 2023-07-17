@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    transition: 1s;
+    font-family: 'Poppins';
+}
+
 body {
-    background-color: #050c29;
+    background-image: linear-gradient(rgb(67, 9, 88), rgb(36, 36, 158));
     color: #fff;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -12,9 +18,13 @@ body {
 .container {
     width: 300px;
     padding: 30px;
-    background-color: #002f6c;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(6, 6, 76, 0.79);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(6, 6, 76, 1);
+
 }
 
 h1 {
@@ -26,6 +36,7 @@ h1 {
 
 .form-group {
     margin-bottom: 20px;
+    padding:20px;
 }
 
 .form-group label {
@@ -41,6 +52,10 @@ h1 {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
+    border: none;
+}
+input:focus{
+    outline: none;
     border: none;
 }
 
