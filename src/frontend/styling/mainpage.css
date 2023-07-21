@@ -1,175 +1,306 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #7f53ac;
-      background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
-      color: #333333;
-      height: 100vh;
-      margin: 0;
-    }
-    
-    .container {
-      text-align: center;
-      max-width: 960px;
-      margin: 0 auto;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .admin-interface {
-      background-color: #f8ceec;
-      background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-      border-radius: 16px;
-      box-shadow: 0 40px 30px rgba(0, 0, 0, 0.541);
-      backdrop-filter: blur(9.8px);
-      -webkit-backdrop-filter: blur(9.8px);
-      border: 1px solid rgba(46, 8, 89, 0.3);
-      padding: 40px;
-      margin: 20px;
-    }
-    
-    .title {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    
-    .title.light-mode {
-      color: black;
-    }
-    
-    .title.dark-mode {
-      color: white;
-    }
-    
-    .content-sections {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px;
-    }
-    
-    .section {
-      flex: 1;
-      background-color: white;
-      padding: 20px;
-      border-radius: 16px;
-      margin: 20px;
-      box-shadow: 0 40px 30px rgba(0, 0, 0, 0.344);
-      backdrop-filter: blur(9.8px);
-      -webkit-backdrop-filter: blur(9.8px);
-      border: 1px solid rgba(46, 8, 89, 0.3);
-    }
-    
-    .section-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    
-    .section-buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    
-    .section-buttons button {
-      padding: 8px 16px;
-      background-color: navy;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      margin: 0 5px;
-      font-size: 16px;
-      transition: background-color 0.3s, transform 0.3s;
-    }
-    
-    .section-buttons button:hover {
-      background-color: #001f4d;
-      transform: scale(1.05);
-    }
-    
-    .section-buttons button:focus {
-      outline: none;
-    }
-    
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
-    
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-      border-radius: 34px;
-    }
-    
-    .slider:before {
-      content: "\f185";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      font-size: 16px;
-      color: #007bff;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding-left: 5px;
-      height: 100%;
-      width: 100%;
-      transition: transform 0.4s, color 0.4s;
-    }
-    
-    input:checked + .slider:before {
-      content: "\f186";
-      color: white;
-      transform: translateX(32px);
-    }
-    
-    input:checked + .slider {
-      background-color: #2196F3;
-    }
-    
-    input:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
-    
-    /* Dark mode styles */
-    body.dark-mode {
-      background-color: #1e1e1e;
-      background-image: linear-gradient(315deg, #05253b 0%, #0e0c62 74%);
-      color: #ffffff;
-    }
-    
-    .admin-interface.dark-mode {
-      background-color: #292929;
-      background-image: linear-gradient(315deg, #0d1e2e 0%, #0e424e 74%);
-      color: #ffffff;
-    }
-    
-    .section.dark-mode {
-      background-color: #333333;
-      box-shadow: 0 40px 30px rgba(0, 0, 0, 0.541);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    
-    .section-buttons.dark-mode button {
-      background-color: #0063cc;
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  color: #333333;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-interface {
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  border-radius: 16px;
+  box-shadow: 0 40px 30px rgba(0, 0, 0, 0.541);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(46, 8, 89, 0.3);
+  padding: 40px;
+  margin: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.title.light-mode {
+  color: black;
+}
+
+.title.dark-mode {
+  color: white;
+}
+
+.content-sections {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px;
+  box-shadow: 0 40px 30px rgba(0, 0, 0, 0.344);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(46, 8, 89, 0.3);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.section-buttons button {
+  padding: 8px 16px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.section-buttons button:hover {
+  background-color: #001f4d;
+  transform: scale(1.05);
+}
+
+.section-buttons button:focus {
+  outline: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  content: "\f185";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5px;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.4s, color 0.4s;
+}
+
+input:checked + .slider:before {
+  content: "\f186";
+  color: white;
+  transform: translateX(32px);
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1e1e1e;
+  background-image: linear-gradient(315deg, #05253b 0%, #0e0c62 74%);
+  color: #ffffff;
+}
+
+.admin-interface.dark-mode {
+  background-color: #292929;
+  background-image: linear-gradient(315deg, #0d1e2e 0%, #0e424e 74%);
+  color: #ffffff;
+}
+
+.section.dark-mode {
+  background-color: #333333;
+  box-shadow: 0 40px 30px rgba(0, 0, 0, 0.541);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section-buttons.dark-mode button {
+  background-color: #0063cc;
+}
+/* ... (existing CSS code) ... */
+
+/* Popups */
+.popup {
+  display: none; /* Hide the popup by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999; /* Ensure the popup is above other content */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally and vertically */
+}
+
+.popup-content {
+  position: relative;
+  width: 80%; /* Adjust the size as needed */
+  max-width: 400px; /* Limit the maximum width if necessary */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add some padding to the popup content */
+.popup-content {
+  padding: 20px;
+}
+
+/* Center the buttons within the popup */
+.popup-content button {
+  display: block;
+  margin: 10px auto; /* Adjust the margin for proper alignment */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn i {
+  display: block;
+}
+
+/* Center the popup */
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* Glassmorphism effect for the background when popup is active */
+body.popup-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 998; /* Place the pseudo-element behind the popup */
+  opacity: 0;
+  pointer-events: none; /* Disable pointer events for the pseudo-element */
+  transition: opacity 0.5s ease; /* Add transition for smooth visibility */
+}
+
+/* Display the glassmorphism pseudo-element when popup is active */
+body.popup-active::before {
+  opacity: 1;
+  pointer-events: auto; /* Enable pointer events for the pseudo-element */
+}
+
+
+#add-user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-user-form label {
+  margin-bottom: 8px;
+}
+
+#add-user-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  /* Remove the black outline on input fields when focused */
+  outline: none;
+}
+
+#add-user-form input:focus {
+  /* Add a blue box-shadow when the input is focused */
+  box-shadow: 0 0 3px 2px #2196F3;
+}
+
+#add-user-form button {
+  padding: 8px 16px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#add-user-form button:hover {
+  background-color: #001f4d;
+  transform: scale(1.05);
+}
+
+#add-user-form button:focus {
+  outline: none;
+}
